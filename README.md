@@ -1,23 +1,28 @@
-# Forever Addons
+# 3RD Addon Central
 
-A small Windows app for keeping your WoW Forever addons up to date.
+A small Windows app for installing, updating and removing your WoW Forever addons.
 
-**[Download Forever Addons for Windows](https://github.com/TheThirdBeast/wow-forever-addons/releases/latest/download/ForeverAddons.exe)**
+**[Download 3RD Addon Central for Windows](https://github.com/TheThirdBeast/wow-forever-addons/releases/latest/download/ForeverAddons.exe)**
 
-1. Open ForeverAddons.exe and select your World of Warcraft folder or its _forever_ subfolder.
-2. Check the addons you want, close WoW, then click **Install / Update**.
-3. For future updates, open the same app and click **Install / Update** again.
+1. Open ForeverAddons.exe. It finds WoW Forever using Battle.net and local game libraries. If it finds multiple installations, choose one.
+2. Check the addons you want, close WoW, and click **Install / Update**. The app remembers your choices.
+3. Open the app again to see available updates. A gold **Update available** badge shows the installed and available versions. **Refresh** checks again. **Install / Update** downloads only changed packages.
 
-The app remembers your choices and downloads only changed packages. Unchecking a box stops updates for that addon and leaves it installed.
+![Pixel-style addon selection window showing an available update for Moonwell](preview.png)
+
+## Uninstalling an addon
+
+Close WoW, click **Uninstall**, choose the addon, and confirm. This removes its installed folders, bundled voice packs, updater backup and saved variables across all accounts and characters in that WoW installation. It clears the addon's enablement entries and Warbelt-specific click bindings where applicable. Unchecking a box only stops future updates.
+
+## Addons
 
 | Addon | What it does |
 | --- | --- |
-| Loquis | Plays recorded quest dialogue and captions. Includes the English quest voice packs. |
+| Loquis | Plays recorded English quest dialogue and captions. Includes the quest voice packs. |
 | Freeroam | Moves game windows and remembers their positions. |
 | Moonwell | Adds click-to-heal party frames and dispel indicators. |
 | Wayfarer's Satchel | Organizes your bags into labeled sections. |
 | Vigil | Shows target and focus frames with buffs and debuffs. |
 | Warbelt | Arranges action bars, keybindings and layouts. |
-| 3RD Glass | Adds optional artwork for Moonwell and Warbelt. |
 
-Requires Windows with .NET Framework 4.8. Your in-game settings stay in WoW's WTF folder. When the app replaces an addon, it keeps the previous copy in the selected client's Interface/.forever-addons/previous folder.
+Requires Windows with .NET Framework 4.8. Downloads are public GitHub release assets. The app verifies each package before installing it under the selected client's _forever_/Interface/AddOns folder.
